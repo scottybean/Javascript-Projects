@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Dogs | All You Need To Know</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="CSS/One-Page-Website.css">
+	</head>
+	<body>
+	
+	<!-- NAV -->
+		<div>
+			<div>
+				<ul>
+					<a href="#home" id="link"><li>HOME</li></a>
+					<a href="#gallery"><li>GALLERY</li></a>
+					<a href="#contact"><li>Contact</li></a>
+				</ul>
+			</div>
+		</div>
+		<!-- END NAV -->
+
+<!-- HOME -->
+		<div id="home">
+			
+				<div>
+					<h2><span>Man's Best Friend</span></h2>
+					<p>This website is all about dogs. Everything you need to know to be ready and able to welcome your new fury friend.</p>
+				</div>
+			
+		</div>
+		<!--END HOME -->
+		
+		<!-- GALLERY -->
+		<section>
+			<div id="gallery">
+				<h1>Gallery</h1>
+
+<!-- Imagees Used to open the lightbox -->
+<div class="row">
+	<div class="column">
+		<img src="images/dog1.jfif" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="images/dog2.jfif" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="images/dog3.jfif" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="images/dog4.jfif" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+
+		<div class="mySlides">
+			<div class="numbertext"> 1 / 4</div>
+			<img src="images/dog1.jfif" style="width:100%">
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">2 / 4</div>
+			<img src="images/dog2.jfif" style="width:100%">
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">3 / 4</div>
+			<img src="images/dog3.jfif" style="width:100%">
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">4 / 4</div>
+			<img src="images/dog4.jfif" style="width:100%">
+		</div>
+
+		<!-- Next/previous controls -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		<!-- Caption text -->
+		<div class="caption-container">
+			<p id="caption"></p>
+		</div>
+
+		<!-- Thumbnail image controls -->
+		<div class="column">
+			<img class="demo" src="images/dog1.jfif" onclick="currentSlide(1)" alt="Nature">
+		</div>
+
+		<div class="column">
+			<img class="demo" src="images/dog2.jfif" onclick="currentSlide(2)" alt="">
+		</div>
+
+		<div class="column">
+			<img class="demo" src="images/dog3.jfif" onclick="currentSlide(3)" alt="">
+		</div>
+
+		<div class="column">
+			<img class="demo" src="images/dog4.jfif" onclick="currentSlide(4)" alt="">
+		</div>
+	</div>
+</div>
+
+
+				<div>
+					<div>
+						<img src="great_weimar.jpg">
+						
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/NPbrIkOVsmQ" 
+			frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+			picture-in-picture" allowfullscreen></iframe>
+			
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Contact -->
+		<section>
+			<div id="contact">
+					<div>
+						<h2><span>You're almost ready for a new addition to the family.</span>
+							<br />Contact us for expert advice
+						</h2>
+						<p>
+							Please provide us with your basic contact information>
+						</p>
+						<div>
+							<form action="" method="post">
+								<input class="rsvp" type="text" value="First Name">
+								<input class="rsvp" type="text" value="Last Name">
+								<input class="rsvp" type="text" value="Email Address">
+								<input class="rsvp" type="text" value="Phone Number">
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div>
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+			</div>
+		</section>
+		<!-- END Contact -->
+		
+		<!-- FOOTER -->
+		<div>
+			www.thedogspace.org &nbsp;|&nbsp; &copy; 2020
+		</div>
+		<!-- END FOOTER -->
+		<script src="JS/one_page_website.js"></script>
+	</body>
+</html>
+					
